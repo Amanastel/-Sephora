@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    margin: auto;
+}
+.topNav {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+    /* border: 2px solid red; */
+}
+
+nav #leftNav {
+    
+    width: 320px;
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+    /* border-bottom: 1px solid black; */
+}
+
+nav #leftNav li {
+    list-style: none;
+    height: 60px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    
+}
+
+
+
+nav #leftNav input {
+    border: none;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    width: 350px;
+    
+}
+
+
+nav #rightNav ul {
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+
+
+nav #rightNav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+nav #rightNav {
+    width: 300px;
+    display: flex;
+}
+
+nav #rightNav li {
+    height: 30px;
+    font-size: 20px;
+    padding: 5px 10px;
+
+}
+
+::placeholder {
+    color: #64636f;
+}
+
+#leftNav li img {
+    width: 50px;
+    height: 100%;
+    border-radius: 40%;
+}
+
+#logo {
+    width: 300px;
+    height: 50px;
+}
+
+#logo img {
+    width: 300px;
+    height: 120px;
+    
+}
+
+#rightNav img {
+    width: 25px;
+}
+
+.conatiner2 {
+    padding-left: 120px;
+    /* border: 2px solid black; */
+    width: 1170px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li {
+    padding: 40px 20px;
+    list-style: none;
+}
+
+nav>ul>li>a {
+    color: black;
+    text-decoration: none;
+    /* under line ko hata deta h ye ager word me koi under line aati h to */
+}
+
+.megaMenu {
+    position: absolute;
+    display: flex;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    flex-wrap: wrap;
+    visibility: hidden;
+    transition: 0.7s;
+    /* box-shadow: 0px 10px 2px 3px lightblue; */
+}
+
+.megaMenuItem {
+    flex-basis: 20%;
+}
+
+nav>ul>li:hover .megaMenu {
+    width: 100%;
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.megaMenuItem ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+
+.megaMenuItem ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.megaMenuItem h3 {
+    color: black;
+    padding: 10px;
+}
