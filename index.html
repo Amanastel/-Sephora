@@ -8,12 +8,23 @@
     <title>Beauty Glamour</title>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/style.css">
-    <script src="https://kit.fontawesome.com/c29ae2ad18.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    
+
 
 </head>
-<style>
-
-</style>
+<style> 
+      .swiper {
+        width: 100%;
+        /* height: 100%; */
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
 
 <body>
     <div class="conatiner">
@@ -25,23 +36,31 @@
                                 alt=""></a></li>
                     <input type="search" placeholder="Serach Beauty Glamour">
                 </div>
+                
                 <div id="logo">
                     <a href="#"><img src="/img/icon srech/logo.png" alt=""></a>
                 </div>
                 <div id="rightNav">
                     <ul>
                         <!-- <i class="fa-solid fa-heart"></i> -->
+                        
                         <li><a href="#"><img
-                                    src="/img/icon srech/heart-over-hand-line-style-icon-vector-design-400-225977161.jpg"
-                                    alt=""></a>
+                                    <!-- src="/img/icon srech/heart-over-hand-line-style-icon-vector-design-400-225977161.jpg"
+                                    alt=""></a> 
+                                    
                         </li>
+                        <hr>
                         <li><a href="#"><img
                                     src="/img/icon srech/shopping-bag-icon-trendy-flat-260nw-1017340096 copy.png"
                                     alt=""></a></li>
-
+                                    <hr>
                         <li id="logIn-icon">
-                            <a href="#"><img src="/img/icon srech/sign in .jpg" alt="">
+                            <div>
+                                <a href="#"><img src="/img/icon srech/sign in .jpg" alt="">
+                            </div>
+                            <div>
                                 <span id="inner-login-icon">Login
+                            </div>
                             </a>
                         </li>
                     </ul>
@@ -317,10 +336,138 @@
             </div>
             <!-- </header> -->
         </nav>
+
+        <!-- Sliding image  -->
+
+        <div class="slidingPart">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://logan.nnnow.com/content/dam/nnnow-project/29-nov-2022/se/L'Ateilier_Topbannerdesktop.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://logan.nnnow.com/content/dam/nnnow-project/29-nov-2022/se/L'Ateilier_Topbannerdesktop.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://logan.nnnow.com/content/dam/nnnow-project/29-nov-2022/se/L'Ateilier_Topbannerdesktop.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://logan.nnnow.com/content/dam/nnnow-project/29-nov-2022/se/L'Ateilier_Topbannerdesktop.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://logan.nnnow.com/content/dam/nnnow-project/29-nov-2022/se/L'Ateilier_Topbannerdesktop.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://logan.nnnow.com/content/dam/nnnow-project/29-nov-2022/se/L'Ateilier_Topbannerdesktop.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://logan.nnnow.com/content/dam/nnnow-project/29-nov-2022/se/L'Ateilier_Topbannerdesktop.jpg" alt="">8</div>
+                    <div class="swiper-slide"><img src="https://logan.nnnow.com/content/dam/nnnow-project/29-nov-2022/se/L'Ateilier_Topbannerdesktop.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- Mid Part -->
+
+        <div class="midPart">
+            <div class="dealsTranding">
+                <div>
+                    <div><img src="/img/dealsTranding/25MAR21_SEPHORA_BP_DESK_Q1.webp" alt=""></div>
+                    <div><img src="/img/dealsTranding/25MAR21_SEPHORA_BP_DESK_Q2.jpg" alt=""></div>
+                    <div><img src="/img/dealsTranding/25MAR21_SEPHORA_BP_DESK_Q3.jpg" alt=""></div>
+                    <div><img src="/img/dealsTranding/25MAR21_SEPHORA_BP_DESK_Q4.jpg" alt=""></div>
+                    <div><img src="/img/dealsTranding/25MAR21_SEPHORA_BP_DESK_Q5.jpg" alt=""></div>
+                    <div><img src="/img/dealsTranding/7MAY21_SEPHORA_BP_Q6.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="ofTheWeek">
+                    <div><img src="./img/dealsTranding/Header_Desk.jpg" alt=""></div>
+                </div>
+
+                <!-- TomFord -->
+                <div class="TomFord">
+                    <dir>
+                        <img src="/img/mid-part-pic/TomFord_BOTWstrip_Desktop.webp" alt="">
+                    </dir>
+                </div>
+                <div class="TomFordDeo">
+                    <div>
+                        <div><img src="/img/mid-part-pic/tom ford deo/TomFord_Tile_01.webp" alt=""></div>
+                        <div><img src="/img/mid-part-pic/tom ford deo/TomFord_Tile_02.webp" alt=""></div>
+                        <div><img src="/img/mid-part-pic/tom ford deo/TomFord_Tile_03.webp" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="justLanded">
+                    <div>
+                        <img src="/img/mid-part-pic/tom ford deo/justlanded.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- first Image Change Efect -->
+
+                <div class="offersVideos">
+                    <div class="firstImageChanger">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="fistImg" src="/img/firstChangeEfect/1.webp" alt="">
+                                    <div class="fistImgLogo">
+                                        <img src="/img/firstChangeEfect/Sale.png" alt="">
+                                        <span style="color: rgb(213, 0, 50)">OFFER</span>
+                                    </div>
+                                    <h3>Sephora Collection</h3>
+                                    <p>From Secret Santa Makeup Gift Set (Limited Edition)</p>
+                                    <b>Rs. 1,600</b>
+                                    <p>2 more offer</p></div>
+                                <div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="fistImg" src="/img/firstChangeEfect/1 (1).webp" alt="">
+                                    <div class="fistImgLogo">
+                                        <img src="/img/firstChangeEfect/Sale.png" alt="">
+                                        <span style="color: rgb(213, 0, 50)">OFFER</span>
+                                    </div>
+                                    <h3>Sephora Collection</h3>
+                                    <p>Wishing You 5 Multi-Use Color Wand for Face, Lips & Eyes (Limited Edition)</p>
+                                    <b>Rs. 2,300</b>
+                                    <p>2 more offer</p></div>
+                                <div class="swiper-slide"><img class="fistImg" src="/img/firstChangeEfect/1 (2).webp" alt="">
+                                    <div class="fistImgLogo">
+                                        <img src="/img/firstChangeEfect/just_arrived.png" alt="">
+                                        <span style="color: rgb(213, 0, 50)">NEW</span>
+                                    </div>
+                                    <h3>Sephora Collection</h3>
+                                    <p>Benefiance Wrinkle Smoothing Contour Serum</p>
+                                    <b>Rs. 6,800</b></div>
+                                <!-- <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div> -->
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#"> VIEW ALL  ></a>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script>
+    var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
 </script>
 
 </html>
