@@ -1,29 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-nav {
+#nav {
+  /* position: fixed; */
+  z-index: 100;
+  background-color: white;
   width: 100%;
   margin: auto;
 }
 .topNav {
   width: 100%;
-  height: 150px;
+  height: 120px;
   margin: auto;
   display: flex;
   position: relative;
   justify-content: space-between;
   text-align: center;
-  padding: 15px 30px;
+  padding-top: 20px;
   /* border: 2px solid red; */
 }
 
 nav #leftNav {
+padding-left: 40px;
   width: 320px;
   display: flex;
   margin: auto 0;
-  height: 35px;
+  height: 45px;
   line-height: 35px;
   /* border-bottom: 1px solid black; */
 }
@@ -90,11 +95,10 @@ nav #rightNav li {
 
 #logo {
   width: 300px;
-  height: 50px;
 }
 
 #logo img {
-  width: 300px;
+  width: 280px;
   height: 120px;
 }
 
@@ -105,25 +109,25 @@ nav #rightNav li {
 .conatiner2 {
   padding-left: 120px;
   /* border: 2px solid black; */
-  width: 1170px;
+  width: 1070px;
+  height: 100px;
   margin: auto;
   position: relative;
   display: flex;
   justify-content: space-between;
   z-index: 100;
-
 }
 
-nav > ul {
+.nav2 > ul {
   display: flex;
 }
 
-nav > ul > li {
+.nav2 > ul > li {
   padding: 40px 20px;
   list-style: none;
 }
 
-nav > ul > li > a {
+.nav2 > ul > li > a {
   color: black;
   text-decoration: none;
   /* under line ko hata deta h ye ager word me koi under line aati h to */
@@ -146,7 +150,7 @@ nav > ul > li > a {
   flex-basis: 20%;
 }
 
-nav > ul > li:hover .megaMenu {
+.nav2 > ul > li:hover .megaMenu {
   background-color: white;
   width: 100%;
   top: 100%;
@@ -170,6 +174,7 @@ nav > ul > li:hover .megaMenu {
 }
 
 .megaMenuItem h3 {
+  font-family: quicksand;
   color: black;
   padding: 10px;
 }
@@ -177,6 +182,8 @@ nav > ul > li:hover .megaMenu {
 /* sliding part */
 .slidingPart {
   /* display: block; */
+  padding: 0;
+  margin: 0;
   width: 100%;
   cursor: pointer;
 }
@@ -249,7 +256,9 @@ nav > ul > li:hover .megaMenu {
 /* <!-- first Image Change Efect --> */
 
 .offersVideos {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 .firstImageChanger {
   display: flex;
@@ -268,7 +277,7 @@ nav > ul > li:hover .megaMenu {
 
 .firstImageChanger .fistImg {
   margin: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .fistImgLogo {
@@ -278,3 +287,92 @@ nav > ul > li:hover .megaMenu {
 .swiper-slide .fistImgLogo img {
   width: 18px;
 }
+
+.viewAll a {
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+/* video part  */
+
+.ytVideo {
+  margin: 10px;
+  text-align: center;
+  /* padding: 20px; */
+}
+.ytVideo p{
+    color: #64636f;
+    font-size: 23px;
+}
+
+.sephoraButy{
+    padding-top: 100px ;
+}
+.sephoraButy img{
+    width: 100%;
+}
+
+.sephorabff{
+    padding: 20px 0;
+}
+.sephorabff img{
+    width: 100%;
+}
+
+.sephora3Part {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .sephora3Part img {
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .sephora3Part {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .sephora3Part div {
+    display: flex;
+    gap: 30px;
+  }
+  .sephora3Part div img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* sephora3Part
+  sephora3Part */
+
+
+  .sephoraBanner6 img {
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .sephoraBanner6 {
+    width: 100%;
+  }
+  .sephoraBanner6 div {
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  .sephoraBanner6 div img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+ 
+
+  .sephoraLastPart {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .sephoraLastPart img {
+    cursor: pointer;
+    width: 100%;
+  }
