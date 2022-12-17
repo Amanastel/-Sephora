@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <!-- <script src="https://kit.fontawesome.com/c29ae2ad18.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/744793c94a.js" crossorigin="anonymous"></script>
+    <style>
+        /* Write all necessery css here  */
+        .container{
+            width: 100%;
+            
+        }
+        nav {
+            width: 100%;
+            height: 300px;
+            background-color: lightcyan;
+        }
+        #product-container {
+            margin: auto;
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .box {
+            width: 400px;
+            height: 100%;
+            border: 2px solid pink;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            margin: auto;
+            text-align: center;
+            border-radius: 12px;
+            padding: 30px;
+        }
+        .box h2{
+            font-size: 20px;
+        }
+        .box img {
+            width: 90%;
+        }
+        .sortPart {
+            width: 100%;
+        }
+        .sortPart div{
+            padding: 25px;
+            width: 100%;
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div>
+                <div><p>Beauty Glamour</p></div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-user"></i> <span>My Account</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-heart"></i><span>Favorites</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav">
+            <h1>Masai E-Commerce</h1>
+            <a href="./index.html">Home</a>
+            <a href="./cart.html">Cart</a>
+        </div>
+        <h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
+        <div id="cart-container">
+            
+        </div>
+    </div>
+</body>
+
+
+<script>
+    let product = document.getElementById("cart-container")
+    let localData = JSON.parse(localStorage.getItem("cart")) || []
+    let pricee = document.getElementById("cart-total")
+
+    apiCall(localData)
+    function apiCall(data) {
+
+        product.innerHTML = null
+
+        let total = 0
+        data.forEach((element, index) => {
+            total = total + (element.quantity * element.price)
+            pricee.innerText = "$" + total
+
+            let mainBox = document.createElement("div");
+            mainBox.setAttribute("class", "box");
+
+            let img = document.createElement("img");
+            img.setAttribute("src", element.image_link);
+
+            let item = document.createElement("h2")
+            item.innerText = element.brand
+
+            let price = document.createElement("h3")
+            price.innerText = element.price
+
+            let details = document.createElement("p")
+            details.innerText = element.details
+
+            let category = document.createElement("p")
+            category.innerText = element.category
+
+            let increment = document.createElement("button");
+            increment.innerText = "+";
+
+            increment.addEventListener("click", () => {
+                element.quantity = element.quantity + 1;
+                pricee.innerText = element.quantity * element.price
+
+                localStorage.setItem("cart", JSON.stringify(localData))
+                apiCall(localData)
+
+            })
+
+            let quantity = document.createElement("span");
+            quantity.innerText = element.quantity;
+
+            let decrement = document.createElement("button");
+            decrement.innerText = "-";
+
+            decrement.addEventListener("click", () => {
+                if (element.quantity > 1) {
+                    element.quantity = element.quantity - 1
+                    pricee.innerText = element.quantity * element.price
+                    localStorage.setItem("cart", JSON.stringify(localData))
+                    apiCall(localData)
+                } else {
+                    apiCall(localData)
+                }
+            })
+
+            let btn = document.createElement("button")
+            btn.setAttribute("class", "btn")
+            btn.innerText = "Remove"
+
+            btn.addEventListener("click", () => {
+                data.splice(index, 1);
+                apiCall(data);
+
+                // pricee.innerText = (element.quantity*element.price)
+
+                localStorage.setItem("cart", JSON.stringify(data))
+
+            })
+            mainBox.append(img, item, price, details, category, btn, increment, quantity, decrement)
+            product.append(mainBox)
+        })
+    }
+</script>
+
+</html>
