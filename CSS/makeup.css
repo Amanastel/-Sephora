@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.conatiner {
+  width: 100%;
+}
 #nav {
   /* position: fixed; */
   z-index: 100;
@@ -25,12 +28,11 @@
 
 nav #leftNav {
   padding-left: 40px;
-  width: 320px;
+  width: 370px;
   display: flex;
   margin: auto 0;
   height: 45px;
   line-height: 35px;
-  /* border-bottom: 1px solid black; */
 }
 
 nav #leftNav li {
@@ -105,7 +107,9 @@ nav #rightNav li {
 #rightNav img {
   width: 25px;
 }
+
 .conatiner2 {
+  /* padding-left: 120px; */
   justify-content: space-between;
   width: 100%;
   /* height: 100px; */
@@ -118,9 +122,9 @@ nav #rightNav li {
   margin: auto;
   width: 80%;
 }
+
 .nav2 > ul {
   width: 100%;
-  /* border: 2px solid black; */
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -140,6 +144,7 @@ nav #rightNav li {
     width: 50px;
     color: rgb(236, 27, 61);
 }
+
 .megaMenu {
   position: absolute;
   display: flex;
@@ -151,7 +156,6 @@ nav #rightNav li {
   flex-wrap: wrap;
   visibility: hidden;
   transition: 0.5s;
-  /* box-shadow: 0px 10px 2px 3px lightblue; */
   left: 145px;
 }
 
@@ -160,7 +164,7 @@ nav #rightNav li {
 }
 
 .nav2 > ul > li:hover .megaMenu {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(193, 130, 130);
   margin: auto;
   width: 80%;
   top: 100%;
@@ -180,9 +184,9 @@ nav #rightNav li {
   color: black;
   text-decoration: none;
 }
-.megaMenuItem ul li a:hover {
+/* .megaMenuItem ul li a:hover {
   color: red;
-}
+} */
 
 .megaMenuItem h3 {
   font-family: quicksand;
@@ -190,202 +194,117 @@ nav #rightNav li {
   padding: 10px;
 }
 
-/* sliding part */
-.slidingPart {
-  /* display: block; */
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  cursor: pointer;
+.lastDownNav {
+  padding-left: 160px;
+  width: 29%;
 }
-.slidingPart img {
-  width: 100%;
-}
-
-/* <!-- Mid Part --> */
-
-.midPart {
-  width: 85%;
-  /* height: 600px; */
-  margin: auto;
-}
-/* deals Tranding */
-.dealsTranding {
-  width: 100%;
-}
-.dealsTranding div {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  margin: auto;
-}
-
-.dealsTranding img {
-  cursor: pointer;
-  width: 170px;
-}
-
-.ofTheWeek {
-  width: 100%;
-}
-.ofTheWeek img {
-  cursor: pointer;
-  width: 100%;
-}
-
-.TomFord {
-  padding-top: 20px;
-  width: 100%;
-}
-.TomFord img {
-  cursor: pointer;
-  width: 100%;
-}
-
-.TomFordDeo {
-  padding-top: 20px;
-  width: 100%;
-}
-.TomFordDeo div {
-  display: flex;
-  gap: 30px;
-}
-.TomFordDeo div img {
-  cursor: pointer;
-  width: 100%;
-}
-
-.justLanded {
-  padding: 30px;
-  width: 100%;
-}
-.justLanded img {
-  width: 100%;
-}
-
-/* <!-- first Image Change Efect --> */
-
-.offersVideos {
-  width: 100%;
+.lastDownNav .lastDownNavCild {
   display: flex;
   justify-content: space-between;
 }
+.lastDownNavCild-makeup {
+  color: #f48fb1;
+}
+
+
+.makeup-banner-img {
+    width: 100%;
+}
+.makeup-banner-img div{
+    display: flex;
+    height: 400px;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+}
+.makeup-banner-img img{
+    width: 100%;
+}
+
+.container3{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+
+.category-shop{
+    width: 30%;
+}
+.category-shop  div p,b{
+    padding-top: 10px;
+}
+
+
+.container3-rightSide{
+    width: 80%;
+}
+
+.justAriveImg{
+    width: 100%;
+}
+
+.justAriveImg img{
+    width: 100%;
+}
+
+.offersVideos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .firstImageChanger {
-  display: flex;
-  width: 45%;
-  /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    width: 90%;
 }
-.firstImageChanger > div {
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  margin: auto;
+.firstImageChanger>div {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
 }
-.firstImageChanger > div h3 {
-  padding: 10px;
+
+.firstImageChanger>div h3 {
+    padding: 10px;
 }
 
 .firstImageChanger .fistImg {
-  margin: auto;
-  width: 100%;
+    margin: auto;
+    width: 90%;
+    
 }
 
 .fistImgLogo {
-  justify-content: center;
-  display: flex;
+    justify-content: center;
+    display: flex;
 }
+
 .swiper-slide .fistImgLogo img {
-  width: 18px;
+    width: 18px;
 }
 
-.viewAll a {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
+.swiper {
+    width: 100%;
+    /* height: 100%; */
 }
 
-/* button add */
-
-  
-/* video part  */
-
-.ytVideo {
-  margin: 10px;
-  text-align: center;
-  /* padding: 20px; */
-}
-.ytVideo p {
-  color: #64636f;
-  font-size: 23px;
+.swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
 }
 
-.sephoraButy {
-  padding-top: 100px;
-}
-.sephoraButy img {
-  width: 100%;
+.justAriveImg-2{
+    padding-top: 40px;
+    width: 100%;
 }
 
-.sephorabff {
-  padding: 20px 0;
-}
-.sephorabff img {
-  width: 100%;
+.justAriveImg-2 img{
+    width: 100%;
 }
 
-.sephora3Part {
-  padding-top: 20px;
-  width: 100%;
-}
-.sephora3Part img {
-  cursor: pointer;
-  width: 100%;
-}
 
-.sephora3Part {
-  padding-top: 20px;
-  width: 100%;
-}
-.sephora3Part div {
-  display: flex;
-  gap: 30px;
-}
-.sephora3Part div img {
-  cursor: pointer;
-  width: 100%;
-}
-
-/* sephora3Part
-  sephora3Part */
-
-.sephoraBanner6 img {
-  cursor: pointer;
-  width: 100%;
-}
-
-.sephoraBanner6 {
-  width: 100%;
-}
-.sephoraBanner6 div {
-  padding-top: 10px;
-  display: flex;
-  gap: 20px;
-}
-.sephoraBanner6 div img {
-  cursor: pointer;
-  width: 100%;
-}
-
-.sephoraLastPart {
-  padding-top: 20px;
-  width: 100%;
-  display: flex;
-  gap: 20px;
-}
-.sephoraLastPart img {
-  cursor: pointer;
-  width: 100%;
-}
-
+/* footer css */
