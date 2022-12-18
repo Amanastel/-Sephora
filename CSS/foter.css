@@ -2,34 +2,31 @@ col_white_amrc {
   color: #fff;
 }
 footer {
-margin-top: 50px;
- padding-top: 50px;
+  margin-top: 50px;
+  padding-top: 50px;
   width: 100%;
   background-color: #eef6f9;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
 }
-.bottom_border{
-width: 100%;
-
+.bottom_border {
+  width: 100%;
 }
-.col_white_amrc{
+.col_white_amrc {
   padding-left: 50px;
 }
 .pt2 {
- 
   padding-top: 40px;
   margin-bottom: 20px;
 }
 footer p {
-
-  font-size: 13px;
+  line-height: 1.8;
+  font-size: 12px;
   color: rgb(15, 14, 14);
   padding-bottom: 0px;
   margin-bottom: 8px;
 }
 .mb10 {
-
   padding-bottom: 25px;
   padding-right: 35px;
 }
@@ -103,8 +100,8 @@ footer p {
   float: left;
 }
 
-.social_footer_ul li a:hover{
-    color: rgb(247, 140, 140);
+.social_footer_ul li a:hover {
+  color: rgb(247, 140, 140);
 }
 .social_footer_ul li a {
   color: rgb(86, 83, 83);
