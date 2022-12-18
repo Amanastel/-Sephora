@@ -13,7 +13,9 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
 </head>
 <style>
     .swiper {
@@ -46,15 +48,16 @@
                     <ul>
                         <!-- <i class="fa-solid fa-heart"></i> -->
 
-                        <li><a href="#"><img <!--
+                        <li><a href="/cart.html" target="_blank"><img <!--
                                     src="/img/icon srech/heart-over-hand-line-style-icon-vector-design-400-225977161.jpg"
                                     alt=""></a>
 
                         </li>
                         <hr>
-                        <li><a href="#"><img
+                        <li><a href="/cart.html" target="_blank"><img
                                     src="/img/icon srech/shopping-bag-icon-trendy-flat-260nw-1017340096 copy.png"
-                                    alt=""></a></li>
+                                    alt=""></a><span id="cartW"></span></li>
+
                         <hr>
                         <li id="logIn-icon">
                             <div>
@@ -192,7 +195,7 @@
                             </div>
                         </li>
 
-                        <li><a href="#">FRAGRANCE</a>
+                        <li><a href="/filter.html" target="_blank">FRAGRANCE</a>
                             <div class="megaMenu">
 
                                 <div class="megaMenuItem">
@@ -233,7 +236,7 @@
                             </div>
                         </li>
 
-                        <li><a href="#">TOOLS & BRUSHES</a>
+                        <li><a href="/FRAGRANCE.html" target="_blank">TOOLS & BRUSHES</a>
                             <div class="megaMenu">
 
                                 <div class="megaMenuItem">
@@ -414,9 +417,9 @@
                                     <p>From Secret Santa Makeup Gift Set (Limited Edition)</p>
                                     <b>Rs. 1,600</b>
                                     <p>2 more offer</p>
-                                    
+
                                     <div class="btn-product">
-                                      
+
                                     </div>
                                 </div>
                                 <div>
@@ -539,7 +542,7 @@
                         </div>
                     </div>
                     <div class="viewAll">
-                        <a href="#"> VIEW ALL <span> ></span></a>
+                        <a href="/filter.html"> VIEW ALL <span> ></span></a>
                     </div>
 
                     <div class="ytVideo">
@@ -803,6 +806,13 @@
             prevEl: ".swiper-button-prev",
         },
     });
+</script>
+<script>
+    let localData = JSON.parse(localStorage.getItem("cart")) || []
+    console.log(localData);
+
+    let btn = document.getElementById("cartW")
+    btn.innerText = localData.length
 </script>
 
 </html>

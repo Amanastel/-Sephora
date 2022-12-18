@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -119,26 +120,32 @@ nav #rightNav li {
   width: 80%;
 }
 .nav2 > ul {
+  font-family: "Martian Mono", monospace;
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
   width: 100%;
-  /* border: 2px solid black; */
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
 
 .nav2 > ul > li {
+  font-family: "Martian Mono", monospace;
+  font-family: "Roboto", sans-serif;
   padding: 40px 20px;
   list-style: none;
 }
 
 .nav2 > ul > li > a {
+  font-family: 'Martian Mono', monospace;
+font-family: 'Roboto', sans-serif;
   color: black;
   text-decoration: none;
   /* under line ko hata deta h ye ager word me koi under line aati h to */
 }
-.nav2 > ul > li > :hover{
-    width: 50px;
-    color: rgb(236, 27, 61);
+.nav2 > ul > li > :hover {
+  width: 50px;
+  color: rgb(236, 27, 61);
 }
 .megaMenu {
   position: absolute;
@@ -151,7 +158,6 @@ nav #rightNav li {
   flex-wrap: wrap;
   visibility: hidden;
   transition: 0.5s;
-  /* box-shadow: 0px 10px 2px 3px lightblue; */
   left: 145px;
 }
 
@@ -308,7 +314,6 @@ nav #rightNav li {
 
 /* button add */
 
-  
 /* video part  */
 
 .ytVideo {
@@ -388,4 +393,3 @@ nav #rightNav li {
   cursor: pointer;
   width: 100%;
 }
-

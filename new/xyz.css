@@ -1,0 +1,120 @@
+
+#types {
+  width: 23%;
+
+  font-size: 22px;
+}
+#types > h2 {
+  margin-left: 40px;
+  font-family: Merriweather;
+}
+
+#types > button {
+  margin: 30px 45px;
+  font-size: 22px;
+  border: 0;
+  background-color: white;
+  font-weight: 550;
+  font-family: Merriweather;
+  text-decoration: none;
+  border: 1px solid pink;
+}
+#types > button:nth-child(1) {
+  margin-top: 20px;
+}
+
+.container3-rightSide{
+  width: 100%;
+}
+#productMainBox {
+  width: 100%;
+}
+
+#productMainBox .main2 {
+  width: 100%;
+}
+
+
+#types > button {
+  margin: 30px 45px;
+  font-size: 22px;
+  border: 0;
+  background-color: white;
+  font-weight: 550;
+  font-family: Merriweather;
+}
+#types > button:nth-child(1) {
+  margin-top: 20px;
+}
+#display {
+  width: 100%;
+}
+#items {
+  width: 100%;
+  /* border: 3px solid rgb(57, 32, 40); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+#productMainBox .main2 #items .boxClass {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 500px;
+  width: 100%;
+}
+#items > div > h4 {
+  height: 0;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+#sort {
+  height: 100px;
+  display: flex;
+}
+#total {
+  width: 65%;
+  margin-top: 50px;
+  padding-left: 40px;
+  font-size: 20px;
+}
+#total ~ select {
+  width: 18%;
+  border: 0;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+#images {
+  width: 60%;
+  height: 250px;
+}
+#rate {
+  justify-content: center;
+}
+
+#price {
+  font-size: 19px;
+}
+#addToCart {
+  height: 30px;
+  width: 40%;
+  background-color: rgb(207, 17, 44);
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#dis {
+  /* text-overflow: ellipsis; */
+  margin: 20px auto auto;
+  width: 90%;
+  /* white-space: nowrap; */
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+}
